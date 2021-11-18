@@ -162,6 +162,7 @@ button {
 
 .btn-bright:hover,
 .btn-bright:focus-visible {
+	cursor: pointer;
 	background-color: hsl( var(--clr-bright) );
 	color: hsl( var(--clr-very-light-gray) );
 	border: 2px solid hsl( var(--clr-very-light-gray) );
@@ -178,6 +179,7 @@ button {
 
 .btn-light:hover,
 .btn-light:focus-visible {
+	cursor: pointer;
 	background-color: hsl( var(--clr-light) );
 	color: hsl( var(--clr-very-light-gray) );
 	border: 2px solid hsl( var(--clr-very-light-gray) );
@@ -194,6 +196,7 @@ button {
 
 .btn-dark:hover,
 .btn-dark:focus-visible {
+	cursor: pointer;
 	background-color: hsl( var(--clr-dark) );
 	color: hsl( var(--clr-very-light-gray) );
 	border: 2px solid hsl( var(--clr-very-light-gray) );

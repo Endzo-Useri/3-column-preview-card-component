@@ -1,0 +1,168 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /*  colors  */
+  --clr-bright: 31, 77%, 52%;
+  --clr-light: 184, 100%, 22%;
+  --clr-dark: 179, 100%, 13%;
+  --clr-transparent-white: 0, 0%, 100%, 0.75;
+  --clr-very-light-gray: 0, 0%, 95%;
+  --clr-ghostwhite: 240, 100%, 99%;
+  
+  /*  font-sizes  */
+  --fs-300: .9375rem;
+
+  /*  font-families  */
+  --ff-sans-normal: 'Lexend Deca', sans-serif;
+  --ff-cursive: 'Big Shoulders Display', cursive;
+}
+
+/* ---------------------- */
+/* Reset                  */
+/* ---------------------- */
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Reset margins */
+body,
+h1,
+p,
+figure,
+picture {
+	margin: 0;
+}
+
+h1 {
+  font-family: var(--ff-cursive);
+	margin: 1em 0;
+}
+
+p {
+  font-weight: 400;
+}
+
+/* set up the body */
+body {
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-300);
+  background-color: hsl( var(--clr-ghostwhite) );
+  color: hsla( var(--clr-transparent-white) );
+	line-height: 1.5;
+	min-height: 100vh; /* prevents any short pages from being an issue */
+}
+
+/* make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block; /* helps us deal with spacing issues */
+}
+
+/* make form elements easier to work with */
+button {
+	font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* general */
+
+.flex {
+	display: flex;
+	gap: var(--gap, 1rem);
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+/* 	gap: var(--gap, 1rem); */
+	margin-top: 10em;
+}
+
+.container {
+  border: none;
+  border-radius: 5em;
+/* 	padding-inline: 2em; */
+	margin-inline: auto;
+	max-width: 50rem;
+}
+
+.cols {
+  padding: 2em;
+}
+
+/* colors */
+
+.bg-bright { background-color: hsl( var(--clr-bright) );}
+.bg-light { background-color: hsl( var(--clr-light) );}
+.bg-dark { background-color: hsl( var(--clr-dark) );}
+.bg-very-light-gray { background-color: hsl( var(--clr-very-light-gray) );}
+
+.text-very-light-gray { color: hsl( var(--clr-very-light-gray) );}
+.text-transparent-white { color: hsl( var(--clr-transparent-white) );}
+.text-bright { color: hsl( var(--clr-bright) );}
+.text-light { color: hsl( var(--clr-light) );}
+.text-dark { color: hsl( var(--clr-dark) );}
+
+/* typography */
+
+.ff-sans-normal { font-family: var(--ff-sans-normal); } 
+.ff-cursive { font-family: var(--ff-cursive); } 
+
+.letter-spacing-1 { letter-spacing: 4.75px; } 
+.letter-spacing-2 { letter-spacing: 2.7px; } 
+.letter-spacing-3 { letter-spacing: 2.35px; } 
+
+.uppercase { text-transform: uppercase; }
+
+.fs-300 { font-size: var(--fs-300); }
+
+.fs-300 {
+    line-height: 1.1;
+}
+
+/* ------------------- */
+/* Components          */
+/* ------------------- */
+
+/* Buttons */
+
+.btn {
+  background-color: hsl( var(--clr-very-light-gray) );
+  padding: .5em 1.5em;
+  margin-top: 5em;
+  border: none;
+  border-radius: 3rem;
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: hsl( var(--clr-bright) );
+	color: black;
+	border: 2px solid hsl( var(--clr-very-light-gray) );
+}

@@ -45,11 +45,12 @@ picture {
 
 h1 {
   font-family: var(--ff-cursive);
-	/* margin: 1em 0; */
+	margin: 1em 0;
 }
 
 p {
   font-weight: 400;
+	margin-bottom: 5em;
 }
 
 /* set up the body */
@@ -110,7 +111,7 @@ button {
 	max-width: 1440px;
 }
 
-.cols {
+.col {
   padding: 2em;
 }
 
@@ -153,7 +154,7 @@ button {
 .btn {
   background-color: hsl( var(--clr-very-light-gray) );
   padding: .5em 1.5em;
-  margin-top: 5em;
+  /* margin-top: 5em; */
 	/* margin: 5em 0 2em 2em; */
   border: none;
   border-radius: 3rem;

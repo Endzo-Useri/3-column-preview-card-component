@@ -95,7 +95,7 @@ button {
 
 .flex {
 	display: flex;
-	gap: var(--gap, 1rem);
+	/* gap: var(--gap, 1rem); */
 }
 
 .grid {
@@ -151,18 +151,56 @@ button {
 
 /* Buttons */
 
-.btn {
+.btn-bright {
   background-color: hsl( var(--clr-very-light-gray) );
   padding: .5em 1.5em;
   /* margin-top: 5em; */
 	/* margin: 5em 0 2em 2em; */
-  border: none;
+	border: 2px solid hsl( var(--clr-very-light-gray) );
   border-radius: 3rem;
 }
 
-.btn:hover,
-.btn:focus {
+.btn-bright:hover,
+.btn-bright:focus-visible {
 	background-color: hsl( var(--clr-bright) );
-	color: black;
+	color: hsl( var(--clr-very-light-gray) );
 	border: 2px solid hsl( var(--clr-very-light-gray) );
 }
+
+.btn-light {
+  background-color: hsl( var(--clr-very-light-gray) );
+  padding: .5em 1.5em;
+  /* margin-top: 5em; */
+	/* margin: 5em 0 2em 2em; */
+	border: 2px solid hsl( var(--clr-very-light-gray) );
+  border-radius: 3rem;
+}
+
+.btn-light:hover,
+.btn-light:focus-visible {
+	background-color: hsl( var(--clr-light) );
+	color: hsl( var(--clr-very-light-gray) );
+	border: 2px solid hsl( var(--clr-very-light-gray) );
+}
+
+.btn-dark {
+  background-color: hsl( var(--clr-very-light-gray) );
+  padding: .5em 1.5em;
+  /* margin-top: 5em; */
+	/* margin: 5em 0 2em 2em; */
+	border: 2px solid hsl( var(--clr-very-light-gray) );
+  border-radius: 3rem;
+}
+
+.btn-dark:hover,
+.btn-dark:focus-visible {
+	background-color: hsl( var(--clr-dark) );
+	color: hsl( var(--clr-very-light-gray) );
+	border: 2px solid hsl( var(--clr-very-light-gray) );
+}
+
+/* @media (min-width: 375px) {
+	.col {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+} */

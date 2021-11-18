@@ -45,7 +45,7 @@ picture {
 
 h1 {
   font-family: var(--ff-cursive);
-	margin: 1em 0;
+	/* margin: 1em 0; */
 }
 
 p {
@@ -101,15 +101,13 @@ button {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 /* 	gap: var(--gap, 1rem); */
-	margin-top: 10em;
+	margin-top: 8em;
 }
 
 .container {
-  border: none;
-  border-radius: 5em;
-/* 	padding-inline: 2em; */
+	/* padding-inline: 2em; */
 	margin-inline: auto;
-	max-width: 50rem;
+	max-width: 1440px;
 }
 
 .cols {
@@ -156,6 +154,7 @@ button {
   background-color: hsl( var(--clr-very-light-gray) );
   padding: .5em 1.5em;
   margin-top: 5em;
+	/* margin: 5em 0 2em 2em; */
   border: none;
   border-radius: 3rem;
 }

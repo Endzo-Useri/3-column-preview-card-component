@@ -151,40 +151,8 @@ button {
 
 /* Buttons */
 
-.btn-bright {
-  background-color: hsl( var(--clr-very-light-gray) );
-  padding: .5em 1.5em;
-  /* margin-top: 5em; */
-	/* margin: 5em 0 2em 2em; */
-	border: 2px solid hsl( var(--clr-very-light-gray) );
-  border-radius: 3rem;
-}
-
-.btn-bright:hover,
-.btn-bright:focus-visible {
-	cursor: pointer;
-	background-color: hsl( var(--clr-bright) );
-	color: hsl( var(--clr-very-light-gray) );
-	border: 2px solid hsl( var(--clr-very-light-gray) );
-}
-
-.btn-light {
-  background-color: hsl( var(--clr-very-light-gray) );
-  padding: .5em 1.5em;
-  /* margin-top: 5em; */
-	/* margin: 5em 0 2em 2em; */
-	border: 2px solid hsl( var(--clr-very-light-gray) );
-  border-radius: 3rem;
-}
-
-.btn-light:hover,
-.btn-light:focus-visible {
-	cursor: pointer;
-	background-color: hsl( var(--clr-light) );
-	color: hsl( var(--clr-very-light-gray) );
-	border: 2px solid hsl( var(--clr-very-light-gray) );
-}
-
+.btn-bright,
+.btn-light,
 .btn-dark {
   background-color: hsl( var(--clr-very-light-gray) );
   padding: .5em 1.5em;
@@ -194,12 +162,30 @@ button {
   border-radius: 3rem;
 }
 
+.btn-bright:hover,
+.btn-bright:focus-visible,
+.btn-light:hover,
+.btn-light:focus-visible,
 .btn-dark:hover,
 .btn-dark:focus-visible {
 	cursor: pointer;
-	background-color: hsl( var(--clr-dark) );
 	color: hsl( var(--clr-very-light-gray) );
 	border: 2px solid hsl( var(--clr-very-light-gray) );
+}
+
+.btn-bright:hover,
+.btn-bright:focus-visible {
+	background-color: hsl( var(--clr-bright) );
+}
+
+.btn-light:hover,
+.btn-light:focus-visible {
+	background-color: hsl( var(--clr-light) );
+}
+
+.btn-dark:hover,
+.btn-dark:focus-visible {
+	background-color: hsl( var(--clr-dark) );
 }
 
 /* @media (min-width: 375px) {

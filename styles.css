@@ -133,10 +133,6 @@ button {
 .ff-sans-normal { font-family: var(--ff-sans-normal); } 
 .ff-cursive { font-family: var(--ff-cursive); } 
 
-.letter-spacing-1 { letter-spacing: 4.75px; } 
-.letter-spacing-2 { letter-spacing: 2.7px; } 
-.letter-spacing-3 { letter-spacing: 2.35px; } 
-
 .uppercase { text-transform: uppercase; }
 
 .fs-300 { font-size: var(--fs-300); }
@@ -159,6 +155,7 @@ button {
 	border: 2px solid hsl( var(--clr-very-light-gray) );
   border-radius: 3rem;
 	font-weight: 700;
+  transition: transform 250ms ease-in-out;
   /* margin-top: 5em; */
 	/* margin: 5em 0 2em 2em; */
 }
@@ -172,6 +169,7 @@ button {
 	cursor: pointer;
 	color: hsl( var(--clr-very-light-gray) );
 	border: 2px solid hsl( var(--clr-very-light-gray) );
+  transform: scale(1.05);
 }
 
 .btn-bright:hover,
@@ -187,6 +185,27 @@ button {
 .btn-dark:hover,
 .btn-dark:focus-visible {
 	background-color: hsl( var(--clr-dark) );
+}
+
+@supports selector(:focus-visible) {
+	.btn-bright:focus,	
+	.btn-light:focus,	
+	.btn-dark:focus {
+    transform: scale(1);
+  }
+  
+  .btn-bright:hover,
+	.btn-light:hover,	
+	.btn-dark:hover {
+    transform: scale(1.05);
+  }
+  
+	.btn-bright:focus-visible,
+	.btn-light:focus-visible,	
+	.btn-dark:focus-visible {
+    outline-offset: .5rem;
+    transform: scale(1.05);
+  }
 }
 
 /* @media (min-width: 375px) {

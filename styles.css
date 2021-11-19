@@ -108,11 +108,22 @@ button {
 .container {
 	/* padding-inline: 2em; */
 	margin-inline: auto;
-	max-width: 1440px;
+	/* max-width: 1440px; */
+	max-width: 800px;
 }
 
 .col {
   padding: 2em;
+}
+
+.border-left {
+	border-top-left-radius: .5rem;
+	border-bottom-left-radius: .5rem;
+}
+
+.border-right {
+	border-top-right-radius: .5rem;
+	border-bottom-right-radius: .5rem;
 }
 
 /* colors */

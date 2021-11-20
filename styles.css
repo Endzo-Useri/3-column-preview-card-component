@@ -109,11 +109,11 @@ button {
 	/* padding-inline: 2em; */
 	margin-inline: auto;
 	/* max-width: 1440px; */
-	max-width: 800px;
+	max-width: 900px;
 }
 
 .col {
-	padding: 1.9em;
+	padding: 3em;
 }
 
 .border-left {
@@ -178,6 +178,13 @@ button {
   transition: transform 250ms ease-in-out;
   /* margin-top: 5em; */
 	/* margin: 5em 0 2em 2em; */
+}
+
+.btn-bright a,
+.btn-light a,
+.btn-dark a {
+	text-decoration: none;
+	color: 2px solid hsl( var(--clr-very-light-gray) );
 }
 
 .btn-bright:hover,

@@ -127,6 +127,7 @@ button {
 }
 
 .animate {
+	cursor: pointer;
 	display: block;
 	transition: transform 500ms ease-in-out;
 }
@@ -184,7 +185,7 @@ button {
 .btn-light a,
 .btn-dark a {
 	text-decoration: none;
-	color: 2px solid hsl( var(--clr-very-light-gray) );
+	color: inherit;
 }
 
 .btn-bright:hover,

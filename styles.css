@@ -126,6 +126,15 @@ button {
 	border-bottom-right-radius: .5rem;
 }
 
+.animate {
+	display: block;
+	transition: transform 500ms ease-in-out;
+}
+
+.animate:hover {
+	transform: scale(1.5);
+}
+
 /* colors */
 
 .bg-bright { background-color: hsl( var(--clr-bright) );}

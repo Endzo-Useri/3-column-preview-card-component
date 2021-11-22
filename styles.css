@@ -266,24 +266,6 @@ button {
 	}
 }
 
-@media (min-width: 711px) and (max-width: 900px) {
-	body {
-		font-size: .9em;
-	}
-
-	.container {
-		max-width: 700px;
-	}
-
-	.col {
-		padding: 2em;
-	}
-
-	p {
-		margin-bottom: 3em;
-	}
-}
-
 @media (min-width: 501px) and (max-width: 710px) {
 	body {
 		font-size: .7em;
@@ -301,9 +283,27 @@ button {
 		margin-bottom: 2em;
 	}
 
-.btn-bright,
-.btn-light,
-.btn-dark {
-	padding: .3em .75em;
+	.btn-bright,
+	.btn-light,
+	.btn-dark {
+		padding: .3em .75em;
+	}
 }
+
+@media (min-width: 711px) and (max-width: 900px) {
+	body {
+		font-size: .9em;
+	}
+
+	.container {
+		max-width: 700px;
+	}
+
+	.col {
+		padding: 2em;
+	}
+
+	p {
+		margin-bottom: 3em;
+	}
 }

@@ -237,7 +237,7 @@ button {
 }
 
 @media (min-width: 375px) {
-	.col {
+	.container {
 		grid-template-rows: 1fr 1fr 1fr;
 	}
 }

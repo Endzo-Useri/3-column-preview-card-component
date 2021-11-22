@@ -103,7 +103,7 @@ button {
 	display: grid;
 	/* grid-template-columns: 1fr 1fr 1fr; */
 /* 	gap: var(--gap, 1rem); */
-	margin-top: 9em;
+	/* margin-top: 9em; */
 }
 
 .container {
@@ -118,23 +118,6 @@ button {
 	padding: 3em;
 }
 
-@media (max-width: 454px) {
-	.container {
-		flex-direction: column;
-		margin: 0;
-	}
-
-	.col {
-		padding: 7em;
-	}
-}
-
-/* @media (max-width: 375px) {
-	.col {
-		display: flex;
-	}
-} */
-
 .border-left {
 	border-top-left-radius: .5rem;
 	border-bottom-left-radius: .5rem;
@@ -143,6 +126,34 @@ button {
 .border-right {
 	border-top-right-radius: .5rem;
 	border-bottom-right-radius: .5rem;
+}
+
+.attribution {
+	margin-bottom: 2em;
+}
+
+@media (max-width: 454px) {
+	.container {
+		flex-direction: column;
+		margin-top: 2em;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+
+	.col {
+		padding: 5em;
+		border-radius: 0;
+	}
+	
+	.border-left {
+		border-top-left-radius: .5rem;
+		border-top-right-radius: .5rem;
+	}
+	
+	.border-right {
+		border-bottom-left-radius: .5rem;
+		border-bottom-right-radius: .5rem;
+	}
 }
 
 .animate {

@@ -96,6 +96,7 @@ button {
 .flex {
 	display: flex;
 	/* gap: var(--gap, 1rem); */
+	margin-top: 9em;
 }
 
 .grid {
@@ -116,15 +117,15 @@ button {
 	padding: 3em;
 }
 
-@media (min-width: 375px) {
+/* @media (max-width: 375px) {
 	.container {
-		grid-template-rows: 1fr 1fr 1fr;
+		flex-direction: rows;
 	}
-}
+} */
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
 	.col {
-		grid-template-rows: 1fr 1fr 1fr;
+		flex-direction: columns;
 	}
 }
 

@@ -96,7 +96,6 @@ button {
 .flex {
 	display: flex;
 	/* gap: var(--gap, 1rem); */
-	margin-top: 9em;
 }
 
 .grid {
@@ -112,6 +111,7 @@ button {
 	margin-inline: auto;
 	/* max-width: 1440px; */
 	max-width: 900px;
+	margin-top: 9em;
 }
 
 .col {
@@ -273,6 +273,7 @@ button {
 
 	.container {
 		max-width: 600px;
+		margin-top: 19em;
 	}
 
 	.col {
@@ -297,6 +298,7 @@ button {
 
 	.container {
 		max-width: 700px;
+		margin-top: 11em;
 	}
 
 	.col {

@@ -116,6 +116,18 @@ button {
 	padding: 3em;
 }
 
+@media (min-width: 375px) {
+	.container {
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+}
+
+@media (min-width: 375px) {
+	.col {
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+}
+
 .border-left {
 	border-top-left-radius: .5rem;
 	border-bottom-left-radius: .5rem;
@@ -234,10 +246,4 @@ button {
     outline-offset: .5rem;
     transform: scale(1.05);
   }
-}
-
-@media (min-width: 375px) {
-	.container {
-		grid-template-rows: 1fr 1fr 1fr;
-	}
 }

@@ -101,12 +101,13 @@ button {
 
 .grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	/* grid-template-columns: 1fr 1fr 1fr; */
 /* 	gap: var(--gap, 1rem); */
 	margin-top: 9em;
 }
 
 .container {
+	/* flex-direction: column; */
 	/* padding-inline: 2em; */
 	margin-inline: auto;
 	/* max-width: 1440px; */
@@ -117,17 +118,22 @@ button {
 	padding: 3em;
 }
 
-/* @media (max-width: 375px) {
+@media (max-width: 454px) {
 	.container {
-		flex-direction: rows;
+		flex-direction: column;
+		margin: 0;
 	}
-} */
 
-@media (max-width: 375px) {
+	.col {
+		padding: 7em;
+	}
+}
+
+/* @media (max-width: 375px) {
 	.col {
 		display: flex;
 	}
-}
+} */
 
 .border-left {
 	border-top-left-radius: .5rem;

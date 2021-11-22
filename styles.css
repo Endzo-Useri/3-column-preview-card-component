@@ -125,7 +125,7 @@ button {
 
 @media (max-width: 375px) {
 	.col {
-		flex-direction: columns;
+		display: flex;
 	}
 }
 

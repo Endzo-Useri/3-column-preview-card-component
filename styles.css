@@ -111,7 +111,7 @@ button {
 	margin-inline: auto;
 	/* max-width: 1440px; */
 	max-width: 900px;
-	margin-top: 9em;
+	margin-top: 5em;
 }
 
 .col {
@@ -242,7 +242,7 @@ button {
   }
 }
 
-@media (min-width: 500px) and (max-width: 624px) {
+@media (min-width: 500px) and (max-width: 625px) {
 	.container {
 		flex-direction: column;
 		margin-top: 2em;
@@ -266,7 +266,7 @@ button {
 	}
 }
 
-@media (min-width: 625px) and (max-width: 799px) {
+@media (min-width: 625px) and (max-width: 800px) {
 	body {
 		font-size: .7em;
 	}
@@ -277,11 +277,10 @@ button {
 
 	.container {
 		max-width: 90%;
-		margin-top: 21em;
 	}
 
 	.col {
-		padding: 1.5em;
+		padding: 3.5em;
 	}
 
 	p {
@@ -306,7 +305,6 @@ button {
 
 	.container {
 		max-width: 700px;
-		margin-top: 12em;
 	}
 
 	.col {

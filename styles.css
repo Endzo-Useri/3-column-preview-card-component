@@ -174,9 +174,9 @@ button {
 
 /* Buttons */
 
-a.btn-bright,
-a.btn-light,
-a.btn-dark {
+.btn-bright,
+.btn-light,
+.btn-dark {
 	display: inline-block;
   background-color: hsl( var(--clr-very-light-gray) );
 	/* color: inherit; */

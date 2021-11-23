@@ -242,7 +242,7 @@ button {
   }
 }
 
-@media (min-width: 500px) and (max-width: 625px) {
+@media (min-width: 375px) and (max-width: 675px) {
 	.container {
 		flex-direction: column;
 		margin-top: 2em;
@@ -266,7 +266,7 @@ button {
 	}
 }
 
-@media (min-width: 625px) and (max-width: 800px) {
+@media (min-width: 675px) and (max-width: 800px) {
 	body {
 		font-size: .7em;
 	}
@@ -276,11 +276,11 @@ button {
 	}
 
 	.container {
-		max-width: 90%;
+		max-width: 600px;
 	}
 
 	.col {
-		padding: 3.5em;
+		padding: 2em;
 	}
 
 	p {
@@ -294,7 +294,7 @@ button {
 	}
 }
 
-@media (min-width: 800px) and (max-width: 999px) {
+@media (min-width: 800px) and (max-width: 1000px) {
 	body {
 		font-size: .8em;
 	}

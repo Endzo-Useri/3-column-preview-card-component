@@ -237,13 +237,16 @@ button {
 }
 
 @media (min-width: 375px) and (max-width: 675px) {
+	body {
+		font-size: 1.4em;
+	}
 	.container {
 		flex-direction: column;
 		max-width: 375px;
 	}
 
 	.col {
-		padding: 5em;
+		padding: 2.5em;
 		border-radius: 0;
 	}
 	

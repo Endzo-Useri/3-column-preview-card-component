@@ -98,18 +98,16 @@ button {
 	/* gap: var(--gap, 1rem); */
 }
 
-.grid {
+/* .grid {
 	display: grid;
-	/* grid-template-columns: 1fr 1fr 1fr; */
-/* 	gap: var(--gap, 1rem); */
-	/* margin-top: 9em; */
-}
+	grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--gap, 1rem);
+} */
 
 .container {
 	/* flex-direction: column; */
 	/* padding-inline: 2em; */
 	margin-inline: auto;
-	/* max-width: 1440px; */
 	max-width: 900px;
 	margin-top: 2em;
 }

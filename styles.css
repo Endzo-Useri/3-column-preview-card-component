@@ -174,24 +174,20 @@ button {
 
 /* Buttons */
 
-.btn-bright,
-.btn-light,
-.btn-dark {
+a.btn-bright,
+a.btn-light,
+a.btn-dark {
+	display: inline-block;
   background-color: hsl( var(--clr-very-light-gray) );
+	/* color: inherit; */
   padding: .5em 1.5em;
 	border: 2px solid hsl( var(--clr-very-light-gray) );
   border-radius: 3rem;
 	font-weight: 700;
+	text-decoration: none;
   transition: transform 250ms ease-in-out;
   /* margin-top: 5em; */
 	/* margin: 5em 0 2em 2em; */
-}
-
-.btn-bright a,
-.btn-light a,
-.btn-dark a {
-	text-decoration: none;
-	color: inherit;
 }
 
 .btn-bright:hover,

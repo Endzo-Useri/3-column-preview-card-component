@@ -37,13 +37,14 @@ html {
 /* Reset margins */
 body,
 h1,
+h2,
 p,
 figure,
 picture {
 	margin: 0;
 }
 
-h1 {
+h2 {
   font-family: var(--ff-cursive);
 	margin: 1em 0;
 }
@@ -250,7 +251,7 @@ button {
 		border-radius: 0;
 	}
 
-	h1 {
+	h2 {
 		font-size: 3rem;
 		margin: .6em 0;
 	}
@@ -275,7 +276,7 @@ button {
 		font-size: .7rem;
 	}
 
-	h1 {
+	h2 {
 		margin: .5em 0;
 	}
 
@@ -303,7 +304,7 @@ button {
 		font-size: .8rem;
 	}
 
-	h1 {
+	h2 {
 		margin: .7em 0;
 	}
 

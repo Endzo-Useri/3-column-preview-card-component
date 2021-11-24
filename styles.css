@@ -46,6 +46,7 @@ picture {
 
 h2 {
   font-family: var(--ff-cursive);
+	font-size: 2.5em;
 	margin: 1em 0;
 }
 
